@@ -31,4 +31,9 @@ Model selection is **fully controlled via `config/config.yaml`** or **CLI argume
 └── README.md                # Project overview (this file)
 ```
 
+## Usage Example
+
+### Train Random Forest:
+```bash
+python -m src.train --model rf
 
