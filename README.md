@@ -36,4 +36,10 @@ Model selection is **fully controlled via `config/config.yaml`** or **CLI argume
 ### Train Random Forest:
 ```bash
 python -m src.train --model rf
+```
+
+### Train LSTM:
+```bash
+python -m src.train --model lstm
+```
 
