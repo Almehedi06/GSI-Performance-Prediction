@@ -1,4 +1,4 @@
-model_name: "rf"
+model_name: "rf"  # Change this to rf, lstm, pilstm, etc.
 
 rf:
   n_estimators: 100
@@ -6,6 +6,28 @@ rf:
   min_samples_leaf: 4
   min_samples_split: 2
   random_state: 42
+
+lstm:
+  timesteps: 2
+  units_1: 32
+  dropout_1: 0.3
+  units_2: 16
+  dropout_2: 0.2
+  learning_rate: 0.001
+  epochs: 30
+  batch_size: 64
+  patience: 5
+
+pilstm:
+  timesteps: 2
+  units_1: 32
+  dropout_1: 0.3
+  units_2: 16
+  dropout_2: 0.2
+  learning_rate: 0.001
+  epochs: 30
+  batch_size: 64
+  patience: 5
 
 data:
   path: "data/raw/filtered_storms_df.csv"
