@@ -1,0 +1,28 @@
+model_name: "rf"
+
+rf:
+  n_estimators: 100
+  max_depth: 10
+  min_samples_leaf: 4
+  min_samples_split: 2
+  random_state: 42
+
+data:
+  path: "data/raw/filtered_storms_df.csv"
+  input_columns:
+    - Temp_Air
+    - Temp_Moist
+    - Soil_MC_10
+    - Soil_MC_35
+    - Soil_MC_65
+    - Soil_MC_91
+    - Inflow (mm/s)
+    - Overflow(mm/s)
+    - Precipitation (mm)
+    - Previous_Dry_Days
+    - Accumulated_Rain (mm)
+    - Peak_Rain (mm)
+    - Mean_Rain (mm)
+    - StormID
+  target_column: "Recession_Rate (mm/s)"
+  test_storm_ids: [12, 14, 40, 20, 57, 52, 61, 65, 70, 85, 95, 163, 158, 171, 115, 200, 231, 221, 237, 244, 273, 277, 261, 296, 299, 304, 305, 325, 326, 214, 205]
