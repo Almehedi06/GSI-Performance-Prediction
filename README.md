@@ -18,16 +18,7 @@ This repository supports **training and testing** of the following models:
 Model selection is **fully controlled via `config/config.yaml`** or **CLI arguments**.
 
 ## Project Structure
-├── config/ # Model and data configuration (YAML)
-├── data/ # Raw and processed data (DO NOT COMMIT large files)
-├── notebooks/ # Experimentation notebooks
-├── results/ # Logs, models, metrics, and plots
-├── src/ # Source code for models, utils, and pipelines
-│ ├── models/ # Model definitions (RF, LSTM, PILSTM)
-│ ├── utils/ # Utility functions for data and evaluation
-│ ├── train.py # Model training pipeline
-│ ├── test_model.py # Model testing pipeline
-└── README.md # Project overview (this file)
+<pre> ```text ├── config/ # Model and data configuration (YAML) ├── data/ # Raw and processed data (DO NOT COMMIT large files) ├── notebooks/ # Experimentation notebooks ├── results/ # Logs, models, metrics, and plots ├── src/ # Source code for models, utils, and pipelines │ ├── models/ # Model definitions (RF, LSTM, PILSTM) │ ├── utils/ # Utility functions for data and evaluation │ ├── train.py # Model training pipeline │ ├── test_model.py # Model testing pipeline └── README.md # Project overview (this file) ``` </pre>
 
 shell
 Copy
